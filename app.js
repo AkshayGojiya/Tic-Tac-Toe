@@ -22,6 +22,7 @@ const resetGame = () => {
     for (let box of boxes){
         box.innerText = "";
         box.disabled = false;
+        box.classList.remove("change-1","change-2");
     }
     turnO = true;
     
@@ -33,6 +34,9 @@ const newGame = () => {
     msg.classList.add("hide");
     resetBtn.classList.remove("hide");
     game.classList.remove("hide-game");
+    for (let box of boxes){
+        box.classList.remove("change-1","change-2");
+    }
 }
 
 boxes.forEach((box) => {
@@ -40,13 +44,14 @@ boxes.forEach((box) => {
         if (turnO) {
             box.innerText = "O";
             turnO = false;
+            box.classList.add("change-1");
         }
         else {
             box.innerText = "X";
             turnO = true;
+            box.classList.add("change-2");
         }
         box.disabled = true;
-
         checkWinner();
     })
 })
