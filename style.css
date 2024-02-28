@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    background-color: white;
+    font-size: 7vmin;
+}
+
+#reset-btn {
+    margin: auto;
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    border-radius: 0.4rem;
+    background-color: #191913;
+    color: #fff;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#new-game {
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    border-radius: 0.4rem;
+    background-color: #191913;
+    color: #fff;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.msg {
+    margin-top: 60%;
+    height: 15vmin;
+    gap: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+
+.hide {
+    display: none;
+}
+
+.hide-game {
+    display: none;
+}
+
+#heading {
+    margin-top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
